@@ -14,6 +14,7 @@
         <Button
             x:Name="AddPersonButton"
             x:FieldModifier="public"
+            Command="{Binding UpdateApplicationCommand, Mode=OneTime}"
             Text="Update Application" />
         <ListView
             x:Name="PeopleListView"
