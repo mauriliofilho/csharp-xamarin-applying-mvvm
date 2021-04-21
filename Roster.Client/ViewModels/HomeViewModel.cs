@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Security.Cryptography;
 using Xamarin.Forms;
 
 namespace Roster.Client.ViewModels
@@ -8,7 +9,7 @@ namespace Roster.Client.ViewModels
     {
         public HomeViewModel()
         {
-
+            Command cmd = UpdateApplicationCommand;
         }
 
         public string Title { get; set; } = "Roster App";
