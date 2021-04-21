@@ -20,7 +20,7 @@ namespace Roster.Client.ViewModels
             
         }
 
-        private String _title;
+        private String _title = "Roster App";
         public string Title
         {
             get => _title;
