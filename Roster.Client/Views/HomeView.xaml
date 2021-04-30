@@ -19,9 +19,12 @@
         <ListView
             x:Name="PeopleListView"
             x:FieldModifier="public"
+            ItemsSource="{Binding People, Mode=OneWay}"
             VerticalOptions="FillAndExpand">
             <ListView.ItemTemplate>
-                <DataTemplate />
+                <DataTemplate>
+                    <TextCell Detail="{Binding Company}" Text="{Binding Name}" />
+                </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
